@@ -2,6 +2,7 @@
   "expo": {
     "name": "gps-status",
     "slug": "gps-status",
+    "entryPoint": "./src/App.js",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",

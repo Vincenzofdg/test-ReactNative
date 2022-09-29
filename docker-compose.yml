@@ -10,7 +10,7 @@ services:
     container_name: api-points
     build:
       context: ./
-      dockerfile: ./database/Dockerfile
+      dockerfile: ./db/Dockerfile
     depends_on: 
       - redis
     links:

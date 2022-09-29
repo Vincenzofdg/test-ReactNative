@@ -13,9 +13,9 @@ RUN chown -R node /app/api-points
 
 USER node
 
-COPY --chown=node:node ["./database/package.json", "./database/package-lock.json", "./database/swagger_output.json", "./"]
+COPY --chown=node:node ["./db/package.json", "./db/package-lock.json", "./db/swagger_output.json", "./"]
 RUN npm ci --production
 
-COPY --chown=node:node ./database/src .
+COPY --chown=node:node ./db/src .
 
 CMD ["dumb-init", "node", "index.js"]

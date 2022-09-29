@@ -4,10 +4,10 @@ import MyContext from './MyContext';
 
 function MyProvider({ children }) {
 
-  const [ projectIndex, setProjectIndex ] = useState(0);
+  const [ test, setTest ] = useState('Ola Mundo');
 
   const obj = {
-    projectIndex, setProjectIndex
+    test, setTest
   };
   
   return(

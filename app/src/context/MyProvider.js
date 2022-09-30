@@ -1,13 +1,11 @@
 import React, { useState } from 'react';
-import PropTypes from 'prop-types';
 import MyContext from './MyContext';
 
 function MyProvider({ children }) {
-
-  const [ test, setTest ] = useState('Ola Mundo');
+  const [ status, setStatus ] = useState(['red', 'Offline', 'Inativo']);
 
   const obj = {
-    test, setTest
+    status, setStatus,
   };
   
   return(
@@ -16,9 +14,5 @@ function MyProvider({ children }) {
     </MyContext.Provider>
     );
 }
-
-MyProvider.propTypes = {
-  children: PropTypes.node.isRequired,
-};
 
 export default MyProvider;

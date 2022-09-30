@@ -9,7 +9,7 @@ services:
     image: api-points
     container_name: api-points
     build:
-      context: ./
+      context: ./db
       dockerfile: ./db/Dockerfile
     depends_on: 
       - redis

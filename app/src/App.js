@@ -1,6 +1,6 @@
 import { registerRootComponent } from 'expo';
 import MyProvider from './context/MyProvider'
-import Home from './Pages/Home'
+import Home from './pages/Home'
 
 function App() {
   return (

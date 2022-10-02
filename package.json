@@ -9,7 +9,7 @@
     "start:android": "cd app && npm run android",
     "start:ios": "cd app && npm run ios",
     "start:web": "cd app && npm run web",
-    "compose": "docker-compose down && docker-compose up"
+    "compose": "cd db && docker-compose down && docker-compose up"
   },
   "repository": {
     "type": "git",

@@ -63,7 +63,7 @@ export const InfoTitle = styled.Text`
   color: black;
   font-family: 'Roboto';
   font-weight: 700;
-  font-size: 22px;
+  font-size: 20px;
 
 `;
 

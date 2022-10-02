@@ -38,8 +38,8 @@ function Home() {
 
     <style.Switch>
       <style.SwitchText>
-        <style.SwitchTitle>Status do Serviso</style.SwitchTitle>
-        <style.SwitchStatus>{ `Serviso ${status[2]}` }</style.SwitchStatus>
+        <style.SwitchTitle>Status do serviço</style.SwitchTitle>
+        <style.SwitchStatus>{ `Serviço ${status[2]}` }</style.SwitchStatus>
       </style.SwitchText>
       <Switch
         trackColor={{ false: "#767577", true: "#e4e3eb" }}

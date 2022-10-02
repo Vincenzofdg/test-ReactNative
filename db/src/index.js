@@ -9,10 +9,10 @@
  */
 
 const swaggerUi = require('swagger-ui-express')
-const swaggerFile = require('../swagger_output.json')
+const swaggerFile = require('./swagger_output.json')
 const express = require('express')
 const app = express()
-const PORT = process.env.PORT | 3001;
+const PORT = process.env.PORT;
 
 /* Routes */
 const router = require('./routes')

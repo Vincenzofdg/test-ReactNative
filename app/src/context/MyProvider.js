@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { getAll } from '../services/api';
+import { add, getAll } from '../services/api';
 import MyContext from './MyContext';
 
 function MyProvider({ children }) {

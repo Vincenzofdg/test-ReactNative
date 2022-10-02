@@ -11,3 +11,5 @@ export const getById = async (id) => {
   const { data } = await get(`${url}/${id}`);
   return data.points[0];
 };
+
+export const add = async (id, data) => await post(`${url}/${id}`, data);

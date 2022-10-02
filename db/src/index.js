@@ -14,8 +14,13 @@ const express = require('express')
 const app = express()
 const PORT = process.env.PORT;
 
+const cors = require('./helpers/cors');
+
 /* Routes */
 const router = require('./routes')
+
+// CORS
+app.use(cors);
 
 /* Middlewares */
 app.use(router)

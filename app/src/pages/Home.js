@@ -5,6 +5,8 @@ import * as style from '../css/Home';
 
 // Image
 import Icon from '../css/imgs/gps.png'
+import getAll from '../services/GET';
+
 
 function Home() {
   const { status, setStatus } = useContext(MyContext);
@@ -16,12 +18,17 @@ function Home() {
     else setStatus(['#66d260', 'Online', 'Ativo'])
   };
 
+  const testDB = async () => {
+    const t = await getAll();
+    console.log(t)
+  }
+
   return (
     <>
     <style.Nav>
       <style.Title>Olá, seja bem vindo</style.Title>
       <style.Btn accessibilityLabel="Status">
-        <style.TitleBtn>Status</style.TitleBtn>
+        <style.TitleBtn onPress={ () => {testDB()} }>Status</style.TitleBtn>
       </style.Btn>
     </style.Nav>
 

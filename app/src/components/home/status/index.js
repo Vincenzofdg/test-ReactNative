@@ -3,7 +3,7 @@ import { Switch } from 'react-native';
 import Context from '../../../context/MyContext';
 import * as style from './style';
 
-function Home() {
+function Status() {
   const { status, setStatus } = useContext(Context);
   const [isEnabled, setIsEnabled] = useState(false);
 
@@ -32,4 +32,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default Status;

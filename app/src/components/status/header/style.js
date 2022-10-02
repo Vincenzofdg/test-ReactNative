@@ -9,17 +9,8 @@ export const Container = styled.View`
   align-items: center;
 `;
 
-export const Greetings = styled.Text`
-  margin-left: 25px;
-  color: white;
-
-  font-family: 'Roboto';
-  font-weight: 600;
-  font-size: 18px;
-`;
-
 export const Btn = styled.TouchableHighlight`
-  margin-right: 25px;
+  margin-left: 25px;
   color: white;
 `;
 
@@ -29,3 +20,13 @@ export const BtnText = styled.Text`
   font-weight: 600;
   font-size: 18px;
 `;
+
+export const Greetings = styled.Text`
+  margin-right: 45%;
+  color: white;
+
+  font-family: 'Roboto';
+  font-weight: 600;
+  font-size: 18px;
+`;
+

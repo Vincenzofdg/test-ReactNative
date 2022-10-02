@@ -18,7 +18,7 @@ function Intervalo() {
     <style.Container>
       <style.Title>Intervalo de comunicação</style.Title>
       <style.Timers>
-        {seconds.map((second) => timers(second))}
+        { seconds.map((second) => timers(second)) }
       </style.Timers>
     </style.Container>
     </>
